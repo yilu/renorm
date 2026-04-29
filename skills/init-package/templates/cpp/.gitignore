@@ -1,0 +1,9 @@
+build/
+*.o
+*.so
+*.a
+*.dylib
+.vscode/
+.idea/
+*.swp
+data/
