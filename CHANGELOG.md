@@ -4,6 +4,12 @@ All notable changes to renorm will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-04-29
+
+### Added
+- `renorm:paper-analysis` skill: paper-reading discipline that enforces quote-before-claim with three-bucket reporting (`Paper-claim` / `Inference` / `Connection`), mandatory assumptions lines for every quoted result, and explicit gap-naming when extending beyond what the paper covers.
+- `/paper <ref>` slash command: deterministic invocation of the paper-analysis skill, accepting an arXiv ID, DOI, or local PDF path as argument.
+
 ## [0.2.0] - 2026-04-29
 
 ### Added
