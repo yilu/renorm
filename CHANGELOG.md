@@ -10,3 +10,4 @@ All notable changes to renorm will be documented in this file.
 - `renorm:core` skill: tagging contract (`Derived` / `Assumed` / `Phenomenological` / `Exploratory` / `Training-knowledge`) plus grounding contract (training-knowledge default, escalation to Zotero MCP / WebSearch on demand) for research-level theoretical-physics conversations.
 - `renorm:init-package` skill: consolidated Python / Julia / C++ scientific-computing scaffolding via bundled templates.
 - `/renorm <claim>` slash command: deterministic invocation of the core skill, with optional argument.
+- `marketplace.json`: registers the repo as a single-plugin marketplace so the plugin is installable via `/plugin install renorm@renorm`.

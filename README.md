@@ -6,8 +6,19 @@ A Claude Code plugin that imposes claim-tagging and literature-grounding discipl
 
 ## Install
 
+In Claude Code, register the marketplace and install the plugin:
+
 ```
-/plugin install yilu/renorm
+/plugin marketplace add yilu/renorm
+/plugin install renorm@renorm
+```
+
+(The repo serves as both the plugin source and a single-plugin marketplace.)
+
+For local development without installing, use the `--plugin-dir` flag:
+
+```bash
+claude --plugin-dir /path/to/renorm
 ```
 
 ## What it does

@@ -1,0 +1,30 @@
+{
+  "name": "renorm",
+  "description": "Marketplace hosting the renorm Claude Code plugin (Research Epistemics: Note, Observe, Reference, Model).",
+  "owner": {
+    "name": "Yi Lu",
+    "email": "yi.lu1988@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "renorm",
+      "description": "Claim discipline and grounding for theoretical physics work in Claude, plus scientific package scaffolding (Python / Julia / C++).",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Yi Lu",
+        "email": "yi.lu1988@gmail.com"
+      },
+      "homepage": "https://github.com/yilu/renorm",
+      "license": "MIT",
+      "keywords": [
+        "physics",
+        "research",
+        "skills",
+        "epistemics",
+        "tagging",
+        "scaffolding"
+      ]
+    }
+  ]
+}

@@ -47,7 +47,8 @@ A self-contained Claude Code plugin that fixes a recurring failure mode in resea
 ```
 renorm/
 ├── .claude-plugin/
-│   └── plugin.json                 # plugin manifest
+│   ├── plugin.json                 # plugin manifest
+│   └── marketplace.json            # single-plugin marketplace registration
 ├── README.md
 ├── CHANGELOG.md
 ├── LICENSE                         # MIT
@@ -78,7 +79,8 @@ renorm/
 
 - Auto-triggers (via SKILL.md `description`) plus explicit slash commands as fallback.
 - No `agents/`, `hooks/`, or `tests/` in v0.1.
-- Manifest is `.claude-plugin/plugin.json`, matching the convention of installed plugins on this machine (verified against `superpowers`, `frontend-design`, `codex`).
+- Plugin manifest is `.claude-plugin/plugin.json`, matching the convention of installed plugins on this machine (verified against `superpowers`, `frontend-design`, `codex`).
+- The repo also serves as a single-plugin marketplace via `.claude-plugin/marketplace.json` so users can install with `/plugin marketplace add yilu/renorm` followed by `/plugin install renorm@renorm`. Without `marketplace.json`, only the `--plugin-dir` development path works.
 
 ### Skill namespacing
 
