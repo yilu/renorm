@@ -46,7 +46,8 @@ A self-contained Claude Code plugin that fixes a recurring failure mode in resea
 
 ```
 renorm/
-├── package.json                    # plugin manifest
+├── .claude-plugin/
+│   └── plugin.json                 # plugin manifest
 ├── README.md
 ├── CHANGELOG.md
 ├── LICENSE                         # MIT
@@ -77,7 +78,7 @@ renorm/
 
 - Auto-triggers (via SKILL.md `description`) plus explicit slash commands as fallback.
 - No `agents/`, `hooks/`, or `tests/` in v0.1.
-- Manifest is `package.json` at repo root, matching the convention of installed plugins on this machine (verified against `claude-plugins-official/superpowers`).
+- Manifest is `.claude-plugin/plugin.json`, matching the convention of installed plugins on this machine (verified against `superpowers`, `frontend-design`, `codex`).
 
 ### Skill namespacing
 
@@ -309,7 +310,7 @@ MIT.
 
 ## Open items (carried into the implementation plan)
 
-- Exact format of `package.json` for Claude Code plugins (verify field names against installed plugins on this machine before publishing).
+- Plugin manifest fields verified: `name`, `version`, `description`, `author`, `homepage`, `repository`, `license`, `keywords`. Located at `.claude-plugin/plugin.json`.
 - Precise `description` field length tolerated by Claude Code's skill loader (the trigger drafts above are ~50–80 words; verify these don't get truncated).
 - Whether `/renorm <claim>` argument is passed to the skill via stdin, environment, or in-prompt — confirm command-format conventions.
 - Whether `templates/` directory under `init-package/` is bundled into the install or fetched on demand (matters for offline use).
