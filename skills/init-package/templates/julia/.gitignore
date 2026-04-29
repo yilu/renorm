@@ -1,0 +1,10 @@
+Manifest.toml
+deps/build.log
+docs/build/
+docs/site/
+.vscode/
+.idea/
+*.swp
+data/
+*.h5
+*.hdf5
