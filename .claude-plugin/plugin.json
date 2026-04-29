@@ -1,6 +1,6 @@
 {
   "name": "renorm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Research Epistemics: Note, Observe, Reference, Model. Claim discipline and grounding for theoretical physics work in Claude, plus scientific package scaffolding (Python / Julia / C++).",
   "author": {
     "name": "Yi Lu",
