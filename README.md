@@ -4,6 +4,8 @@
 
 A Claude Code plugin that imposes claim-tagging and literature-grounding discipline on research-level theoretical-physics conversations, with scaffolding for Python / Julia / C++ scientific computing packages.
 
+> **Status:** Pre-release (v0.1.0). Active development; README and trigger language will be refined after a dogfooding period. File issues if curious.
+
 ## Install
 
 In Claude Code, register the marketplace and install the plugin:
